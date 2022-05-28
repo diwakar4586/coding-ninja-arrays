@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-
+void swap(int *a ,int *b );
 
 
 void sum_array(int arr[],int arr_2[],int n,int m){
@@ -53,13 +53,28 @@ int main(){
 
     }
     cout<<endl;
+   sum_array(arr,arr_2,n,m);
 
-    sum_array(arr,arr_2,n,m);
+//I A M DEVANSH. I AM NOW APPENDING A NEW CPP PROGRAM TO THIS FILE HERE AND THIS WILL BE COMMITTED!!!!!
+//THIS CODE WILL NOW INPUT 2 MORE NUMBERS AND SWAP THEM USING FUNCTION !!!!
 
+    int x,y;
+    cout<<"Enter Two Numbers To Swap: ";
+    cin>>x>>y;
 
+    swap(&x,&y);
 
+    cout<<"\nAfter Swapping Two Numbers: ";
+    cout<<x<<" "<<y<<" \n";
 
-    
-     
     return 0;
 }
+void swap(int *a,int *b)
+{
+ int z;
+ z=*a;
+
+ *a=*b;
+
+ *b=z;}
+
